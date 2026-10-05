@@ -32,11 +32,11 @@ h1,h2,h3,p{margin:0}
 .btn:active{transform:scale(.97)}.btn.ghost{background:var(--card);border:1px solid var(--line);color:var(--text)}.btn.yellow{background:var(--yellow);color:#2b2100}.btn.danger{background:none;color:var(--red);border:1px solid var(--red)}.btn[disabled]{opacity:.55}
 .gap{margin-top:10px}
 /* login */
-#v-login,#v-verify,#v-setup,#v-slogin{background:linear-gradient(165deg,#0F1A33,#2540D9);color:#fff;padding-top:60px}
+#v-login,#v-verify,#v-setup{background:linear-gradient(165deg,#0F1A33,#2540D9);color:#fff;padding-top:60px}
 .lg{width:72px;height:72px;border-radius:24px;background:#fff;color:var(--p);display:grid;place-items:center;margin-bottom:20px}
 .field{width:100%;padding:14px 16px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--text);font:inherit}
-#v-login .field,#v-verify .field,#v-setup .field,#v-slogin .field{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.28);color:#fff;margin-top:24px}
-#v-login .field::placeholder,#v-verify .field::placeholder,#v-setup .field::placeholder,#v-slogin .field::placeholder{color:rgba(255,255,255,.6)}
+#v-login .field,#v-verify .field,#v-setup .field{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.28);color:#fff;margin-top:24px}
+#v-login .field::placeholder,#v-verify .field::placeholder,#v-setup .field::placeholder{color:rgba(255,255,255,.6)}
 .err{color:#FFB4B7;font-size:12px;min-height:20px;margin:6px 0 8px}
 .div{display:flex;align-items:center;gap:10px;margin:22px 0 14px;color:rgba(255,255,255,.65);font-size:12px}.div::before,.div::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.22)}
 .soc{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
@@ -142,9 +142,9 @@ body{letter-spacing:.005em;-webkit-font-smoothing:antialiased}
 .btn.ghost,.btn.danger{box-shadow:none}.btn.ghost{background:var(--card)}.btn.yellow{background:linear-gradient(135deg,#FFC93C,#F0A800);box-shadow:0 10px 22px -8px rgba(240,168,0,.7)}
 #v-login .btn{box-shadow:0 12px 28px -8px rgba(0,0,0,.45)}
 .field{border-radius:16px;padding:15px 16px;transition:border-color .2s,box-shadow .2s}.field:focus{outline:0;border-color:var(--p);box-shadow:0 0 0 4px color-mix(in srgb,var(--p) 20%,transparent)}
-#v-login,#v-verify,#v-setup,#v-slogin{background:radial-gradient(420px 340px at 90% -5%,rgba(122,92,255,.6),transparent 62%),radial-gradient(380px 300px at -10% 105%,rgba(40,190,255,.38),transparent 60%),linear-gradient(165deg,#0A1124,#1D35C8)}
+#v-login,#v-verify,#v-setup{background:radial-gradient(420px 340px at 90% -5%,rgba(122,92,255,.6),transparent 62%),radial-gradient(380px 300px at -10% 105%,rgba(40,190,255,.38),transparent 60%),linear-gradient(165deg,#0A1124,#1D35C8)}
 .lg{background:linear-gradient(145deg,#fff,#D9E0FF);border-radius:26px;box-shadow:0 18px 36px -10px rgba(0,0,0,.5),inset 0 -3px 0 rgba(67,97,255,.15)}
-#v-login .field,#v-verify .field,#v-setup .field,#v-slogin .field{background:rgba(255,255,255,.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+#v-login .field,#v-verify .field,#v-setup .field{background:rgba(255,255,255,.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .soc button{background:rgba(255,255,255,.94);border-radius:16px;box-shadow:0 8px 18px -8px rgba(0,0,0,.4);transition:transform .15s}.soc button:active{transform:scale(.96)}
 .av{box-shadow:0 0 0 3px var(--card),0 0 0 5px color-mix(in srgb,var(--p) 40%,transparent)}
 .bars div{border-radius:8px}.bars .now{background:linear-gradient(180deg,var(--p2),var(--p))}
@@ -186,7 +186,7 @@ body{align-items:center}
 #hbar{display:block;position:absolute;bottom:8px;left:50%;width:136px;height:5px;margin-left:-68px;border-radius:3px;background:currentColor;color:var(--text);opacity:.9;z-index:95;pointer-events:none;transition:color .25s}
 #app.lt #sbar,#app.lt #hbar{color:#fff}
 #top{padding-top:60px;padding-bottom:12px}
-#v-login,#v-verify,#v-setup,#v-slogin{padding-top:106px}
+#v-login,#v-verify,#v-setup{padding-top:106px}
 #lga{top:62px}#sb{top:66px}#toasts{top:62px}#push{top:118px}
 #nav{bottom:26px}.view{padding-bottom:140px}
 .sheet{padding-bottom:calc(36px + env(safe-area-inset-bottom,0px))}
@@ -263,7 +263,7 @@ b,strong{font-weight:600}
 .atp h3{margin:0;color:#fff}.atp p{margin:4px 0 14px;font-size:13px;line-height:1.5;color:rgba(255,255,255,.7)}
 .atg{display:grid;grid-template-columns:1fr 1fr;gap:10px}.att{min-height:88px;border-radius:22px;background:rgba(255,255,255,.12);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:10px 6px;transition:background .15s,transform .15s}.att:active{transform:scale(.96)}.att b{font-size:22px;font-weight:700}.att span{font-size:12.5px;line-height:1.35;opacity:.85}.att.on{background:var(--p)}
 .atx{margin-top:12px;width:100%;min-height:46px;border-radius:16px;background:rgba(255,255,255,.12);color:#fff;font-weight:600}
-#v-staff{padding-top:24px}@media (min-width:520px){#v-staff{padding-top:76px}}
+
 
 /* clean home + profile avatar in header */
 #top>div:last-child{gap:8px!important}
@@ -324,7 +324,6 @@ b,strong{font-weight:600}
       <button onclick="loginSoc('Facebook','somchai.j@outlook.com')"><i style="background:#1877F2">f</i>Facebook</button>
       <button onclick="loginSoc('Apple','somchai.j@icloud.com')"><i style="background:#111">A</i>Apple</button>
     </div>
-    <button type="button" class="lnk" style="display:block;margin:24px auto 0;opacity:.85" onclick="staffBack='login';show('staff')">เข้าสู่ระบบสำหรับเจ้า⁠หน้าที่หอ⁠พัก</button>
   </section>
 
   <section id="v-verify" class="view">
@@ -362,19 +361,7 @@ b,strong{font-weight:600}
   <section id="v-profile" class="view"><div id="pb"></div></section>
   <section id="v-sub" class="view"><button class="back" onclick="show(subBack)"><span id="bk"></span>ย้อนกลับ</button><h2 class="title" id="st" style="margin-bottom:14px"></h2><div id="sbd"></div></section>
 
-  <section id="v-slogin" class="view">
-    <div class="lg" id="lg4"></div>
-    <h1 style="font-size:26px;font-weight:700">เข้าสู่ระบบเจ้า⁠หน้าที่</h1>
-    <p style="opacity:.8;margin-top:6px">สำหรับเจ้า⁠หน้าที่หอ⁠พัก</p>
-    <div class="note" style="margin-top:14px;background:rgba(255,255,255,.16);color:#fff">โหมดเดโม · ใช้บัญชีนี้<br>ชื่อผู้⁠ใช้ <b>staff</b><br>รหัสผ่าน <b>staff1234</b></div>
-    <input id="su" class="field" autocomplete="off" autocapitalize="none" placeholder="ชื่อผู้⁠ใช้" aria-label="ชื่อผู้⁠ใช้">
-    <input id="sp" class="field" type="password" style="margin-top:12px" placeholder="รหัสผ่าน" aria-label="รหัสผ่าน">
-    <div id="sle" class="err"></div>
-    <button class="btn" style="background:#fff;color:#0F1A33" onclick="staffLogin()">เข้าสู่ระบบ</button>
-    <button class="btn gap" style="background:none;color:#fff;opacity:.8" onclick="show(staffBack)">ย้อนกลับ</button>
-  </section>
 
-  <section id="v-staff" class="view"><h2 class="title">มุมมองเจ้า⁠หน้าที่หอ⁠พัก</h2><p class="sub" style="margin-bottom:14px">เดโม · นำ⁠ผ้าออกได้เมื่อค้างเกิน 15 นาที</p><div id="stf"></div></section>
 
   <section id="v-scan" class="view">
     <button id="sb" onclick="show('laundry')">ย้อนกลับ</button>
@@ -395,12 +382,11 @@ b,strong{font-weight:600}
 </div>
 
 <script>
-const $=s=>document.querySelector(s), MIN=6e4, PRICE=30, WASH=45, RES=10, OPEN=5, COIN=10, COINS=PRICE/COIN, COINT=5, REMIND=3, STAFF=15;
-let staffBack='profile',STAFFIN=false;const STAFFLOG=[];
+const $=s=>document.querySelector(s), MIN=6e4, PRICE=30, WASH=45, RES=10, OPEN=5, COIN=10, COINS=PRICE/COIN, COINT=5, REMIND=3, GRACE=15;
 const nm=id=>String(id).padStart(2,'0');
 const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const USERS={};
-const canTake=m=>m.st==='free';
+const canTake=m=>m.st==='free'||(m.st==='done'&&sim-m.at>=GRACE*MIN);
 const ic=(n,s=22)=>`<svg class="ic" width="${s}" height="${s}"><use href="#i-${n}"/></svg>`;
 const ago=(d,h,m)=>{const t=new Date();t.setDate(t.getDate()-d);t.setHours(h,m,0,0);return t};
 let LANG='th';
@@ -411,7 +397,7 @@ const mn=ms=>Math.max(0,Math.ceil(ms/MIN));
 
 /* ---------- state (sim = simulated clock in ms; speed multiplies real time) ---------- */
 let sim=Date.now();
-const S={name:'',email:'',bal:0,tm:null,speed:1,set:{wash:true,late:true,pay:true,news:false}};
+const S={name:'',email:'',bal:0,pts:0,plog:[],tm:null,speed:1,set:{wash:true,late:true,pay:true,news:false}};
 const machines=[{id:1,st:'wash',end:sim+22*MIN,q:1},{id:2,st:'free',nxt:sim+9*MIN},{id:3,st:'free',nxt:sim+14*MIN},{id:4,st:'wash',end:sim+5*MIN,q:1},{id:5,st:'done',kg:3.8,at:sim-12*MIN,coll:Infinity,bookAt:Infinity,q:1},{id:6,st:'free',nxt:sim+6*MIN}];
 let order=null,notifs=[],main='home',subBack='profile',gridSig='',lastPh='';
 const others=[],MAXM=3,allOrd=()=>[order,...others].filter(Boolean),isMine=id=>allOrd().some(o=>o.id===id);
@@ -428,18 +414,20 @@ updLaundry=function(f){_ul(f);renderOthers()};
 const txns=[];
 const hist=[];
 
+/* ---------- points system ---------- */ const PT_START=20,PT_ON=30,PT_LATE=50,FINE=10,REWARDS=[100,200,300,500]; function ptLog(t,d){S.plog.unshift({ts:new Date(),t,d})} /* เรียกครั้งเดียวต่อการซัก (guard ด้วย o.ptDone) คืนข้อความสรุปสำหรับ toast */ function settlePts(o,m){   if(o.ptDone)return '';o.ptDone=1;   const n=nm(o.id),late=((o.pickAt||sim)-m.at)>GRACE*MIN;   if(!late){     S.pts+=PT_ON;ptLog('รับผ้าภายใน '+GRACE+' นาที · เครื่อง '+n,PT_ON);     return '+'+PT_ON+' แต้ม';   }   if(S.pts>0){                       // หักได้ไม่เกินที่มี ไม่ติดลบ     const d=Math.min(S.pts,PT_LATE);S.pts-=d;     ptLog('รับผ้าช้าเกิน '+GRACE+' นาที · เครื่อง '+n,-d);     return '-'+d+' แต้ม';   }   /* แต้มเป็น 0 อยู่แล้ว → ปรับเงิน */   S.bal-=FINE;   txns.unshift({ts:new Date(),t:'ค่าปรับรับผ้าช้า เครื่อง '+n,a:-FINE});   ptLog('รับผ้าช้า แต้มเป็น 0 · ปรับ ฿'+FINE+' · เครื่อง '+n,0);   notify('pay','ค่าปรับรับผ้าช้า','หักค่าปรับ ฿'+FINE+' จากกระเป๋าเงิน (เครื่อง '+n+')','wallet');   return 'ปรับ ฿'+FINE; }
+
 /* ---------- navigation ---------- */
 const NAV=[['home','home','หน้าหลัก'],['laundry','washer','ผ้าของฉัน'],['wallet','wallet','กระเป๋า⁠เงิน'],['profile','user','โปรไฟล์']];
 $('#nav').innerHTML=NAV.map(n=>`<button data-v="${n[0]}" onclick="show('${n[0]}')">${ic(n[1])}${n[2]}</button>`).join('');
 $('#mk').innerHTML=ic('washer',22);$('#lg').innerHTML=ic('washer',40);$('#lg2').innerHTML=ic('washer',40);$('#lg3').innerHTML=ic('washer',40);$('#bell').insertAdjacentHTML('afterbegin',ic('bell',22));$('#bk').innerHTML=ic('back',18);
-function show(v){if(v!=='verify')hideSms();if(v==='staff'&&!STAFFIN)v='slogin';
+function show(v){if(v!=='verify')hideSms();
   document.querySelectorAll('.view').forEach(e=>e.classList.toggle('active',e.id==='v-'+v));
   if(NAV.some(n=>n[0]===v))main=v;
-  const app=!['login','scan','verify','setup','staff','slogin'].includes(v);
-  $('#lga').style.display=['login','verify','setup','slogin'].includes(v)?'flex':'none';
+  const app=!['login','scan','verify','setup'].includes(v);
+  $('#lga').style.display=['login','verify','setup'].includes(v)?'flex':'none';
   $('#top').style.display=app?'flex':'none';updAv(app);$('#nav').classList.toggle('show',app);
   document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===main));
-  ({home:renderHome,laundry:renderLaundry,wallet:renderWallet,profile:renderProfile,staff:renderStaff})[v]?.();
+  ({home:renderHome,laundry:renderLaundry,wallet:renderWallet,profile:renderProfile})[v]?.();
   if(v==='scan'){$('#frame').classList.remove('ok');$('#stx').textContent='เล็งกล้องไปที่ QR บนเครื่อง'}
   if(!show.keep){const w=$('#v-'+v);if(w)w.scrollTop=0}
   if(typeof atVis==='function')atVis(v);
@@ -480,20 +468,43 @@ function showSms(d=1400){
 function hideSms(){clearTimeout(showSms.t);clearTimeout(showSms.h);const el=$('#sms');if(el)el.classList.remove('show')}
 function smsTap(){const o=$('#otp');if(o){o.value=OTPCODE;o.dispatchEvent(new Event('input',{bubbles:true}));o.focus()}hideSms()}
 function sendOtp(){const v=$('#vph').value.trim();if(!/^0\d{9}$/.test(v)){$('#ve').textContent='กรุณากรอกเบอร์โทรศัพท์ 10 หลักที่ขึ้นต้นด้วย 0';return}otpPhone=v;vStep(2);showSms(1400)}
-function checkOtp(){if($('#otp').value.trim()!=='123456'){$('#ve').textContent='รหัส OTP ไม่ถูกต้อง';return}const prev=S.email;if(S.created&&prev&&prev!==pend.email){USERS[prev]={n:S.name,b:S.bal,m:S.tm,t:txns.slice(),h:hist.slice()};const u=USERS[pend.email];txns.length=0;hist.length=0;notifs=[];badge();if(u){S.name=u.n;S.bal=u.b;S.tm=u.m;txns.push(...u.t);hist.push(...u.h)}else{S.created=false;S.name='';S.bal=0;S.tm=null}}S.email=pend.email;S.phone=otpPhone;if(S.created){toast('ยืนยันตัว⁠ตนสำเร็จ');return show('home')}vSetup()}
+function checkOtp(){
+  if($('#otp').value.trim()!=='123456'){$('#ve').textContent='รหัส OTP ไม่ถูกต้อง';return}
+  const prev=S.email;
+  if(S.created&&prev&&prev!==pend.email){
+    USERS[prev]={n:S.name,b:S.bal,m:S.tm,t:txns.slice(),h:hist.slice(),p:S.pts,pl:S.plog.slice()};
+    const u=USERS[pend.email];txns.length=0;hist.length=0;notifs.length=0;badge();
+    if(u){S.name=u.n;S.bal=u.b;S.tm=u.m;txns.push(...u.t);hist.push(...u.h);S.pts=u.p||0;S.plog=(u.pl||[]).slice()}
+    else{S.created=false;S.name='';S.bal=0;S.tm=null;S.pts=0;S.plog=[]}
+  }
+  S.email=pend.email;S.phone=otpPhone;
+  if(S.created){toast('ยืนยันตัว⁠ตนสำเร็จ');return show('home')}
+  vSetup()
+}
 function vSetup(){show('setup');$('#sn').value=LANG==='en'?tr(pend.name):pend.name;S.readTerms=false;$('#ag').checked=false;$('#agHint').style.display='block';$('#se').textContent=''}
-function finishSetup(){const v=$('#sn').value.trim();if(!v){$('#se').textContent='กรุณากรอกชื่อที่แสดง';return}if(!$('#ag').checked){$('#se').textContent=S.readTerms?'กรุณายอมรับเงื่อนไขการใช้งานเพื่อดำเนินการต่อ':'กรุณาอ่านเงื่อนไขการใช้งานให้ครบก่อนยอมรับ';return}S.name=v;S.created=true;toast('สร้างบัญชีสำเร็จ');notify('pay','ยินดีต้อนรับสู่ Dorm Laundry Sync','เติม⁠เงินเข้ากระเป๋าเพื่อเริ่มจองเครื่อง⁠ซัก⁠ผ้า','wallet');show('home')}
+function finishSetup(){
+  const v=$('#sn').value.trim();if(!v){$('#se').textContent='กรุณากรอกชื่อที่แสดง';return}
+  if(!$('#ag').checked){$('#se').textContent=S.readTerms?'กรุณายอมรับเงื่อนไขการใช้งานเพื่อดำเนินการต่อ':'กรุณาอ่านเงื่อนไขการใช้งานให้ครบก่อนยอมรับ';return}
+  S.name=v;S.pts=PT_START;S.plog=[{ts:new Date(),t:'โบนัสเริ่มบัญชีใหม่',d:PT_START}];S.created=true;
+  toast('สร้างบัญชีสำเร็จ');notify('pay','ยินดีต้อนรับสู่ Dorm Laundry Sync','เติม⁠เงินเข้ากระเป๋าเพื่อเริ่มจองเครื่อง⁠ซัก⁠ผ้า','wallet');show('home')
+}
 function openTerms(){
   openSheet(`<h3 style="font-size:19px">เงื่อนไขการใช้งานและนโยบายความเป็นส่วนตัว</h3><p class="sub">ข้อความตัวอย่างสำหรับเดโม ฉบับจริงให้ผู้ดูแลหอ⁠พักกำหนด</p>
   <div class="terms" id="terms" onscroll="chkTerms()">
    <h4>1. การใช้บริการ</h4><p>บริการนี้ให้นักศึกษาจองและใช้เครื่อง⁠ซัก⁠ผ้าของหอ⁠พักผ่านบัญชีที่ยืนยันเบอร์โทรศัพท์แล้ว หนึ่งบัญชีจองพร้อมกันได้สูงสุด 3 เครื่อง (จองเครื่องถัดไปได้เมื่อเครื่องก่อนหน้าเริ่มซักแล้ว) และห้ามให้ผู้อื่นใช้บัญชีแทน</p>
    <h4>2. การจองและค่าบริการ</h4><p>ค่าบริการครั้งละ ฿${PRICE} ชำระได้ 2 วิธี คือหักจากกระเป๋า⁠เงินทันทีที่จอง หรือจ่ายเงินสดด้วยเหรียญ ฿${COIN} จำนวน ${COINS} เหรียญที่ช่องหยอดเหรียญของเครื่อง (ไม่หักเงินตอนจอง) หลังจองต้องไปยืนยันตัว⁠ตนที่เครื่องด้วยการสแกน QR ภายใน ${RES} นาที และหากจ่ายเงินสดต้องหยอดเหรียญให้ครบภายใน ${COINT} นาทีหลังสแกน หากไม่ทำภายในเวลา การจองจะถูกยกเลิก เครื่องกลับมาว่าง และคืนค่าบริการที่หักไว้เข้ากระเป๋า⁠เงินให้อัตโนมัติ ส่วนการจ่ายเงินสด หากหยอดเหรียญไม่ครบ เหรียญที่หยอดไปแล้วจะถูกเพิ่มเข้ากระเป๋า⁠เงินเป็นเครดิต</p>
    <h4>3. กระเป๋า⁠เงินและการเติม⁠เงิน</h4><p>เติม⁠เงินได้ผ่าน TrueMoney Wallet หรือ QR PromptPay ครั้งละ ฿10 – ฿5,000 (เป็นจำนวนเต็ม) ยอดคงเหลือใช้ชำระค่าซัก⁠ผ้าในแอปนี้เท่านั้น ไม่สามารถโอนให้ผู้อื่นได้</p>
-   <h4>4. การเริ่มซักและการรับ⁠ผ้า</h4><p>หลังสแกน QR ให้นำ⁠ผ้าใส่เครื่องและกดปุ่มสตาร์ทที่เครื่อง เครื่องจะตรวจสอบว่ากดปุ่มเริ่มซักแล้ว และระบบจะนับเวลาซักให้ เมื่อซักเสร็จให้มารับ⁠ผ้าทันที ผ้าจะอยู่ในเครื่องและเครื่องจะไม่เปิดให้ผู้อื่นจองจนกว่าคุณจะนำ⁠ผ้าออก โดยเซนเซอร์น้ำหนักในเครื่องจะตรวจพบว่าไม่มีผ้าและปล่อยเครื่องให้คนถัดไปเอง ไม่ต้องกดในแอป ระบบจะแจ้ง⁠เตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ หากผ้าอยู่ในเครื่องเกิน 15 นาที เจ้า⁠หน้าที่หอ⁠พักสามารถนำ⁠ผ้าของคุณออกใส่ตะกร้าเพื่อให้เครื่องว่างได้</p>
-   <h4>5. เครื่องขัดข้อง</h4><p>หากเครื่องทำงานผิดปกติ ให้แจ้งผ่านเมนูติดต่อ Support เพื่อให้ช่างตรวจสอบ และห้ามพยายามซ่อมเครื่องด้วยตนเอง</p>
-   <h4>6. ข้อมูลที่เราเก็บ</h4><p>ชื่อที่แสดง อีเมลหรือบัญชีที่ใช้เข้าสู่ระบบ เบอร์โทรศัพท์ที่ใช้ยืนยันตัว⁠ตน เบอร์ TrueMoney Wallet ที่เชื่อมไว้ (ถ้ามี) และประวัติการใช้เครื่องและการเติม⁠เงิน</p>
-   <h4>7. การใช้ข้อมูล</h4><p>ใช้เพื่อให้บริการ จัดคิว ส่งการแจ้ง⁠เตือน และป้องกันการใช้งานที่ผิดปกติ เราไม่ขายข้อมูลของคุณให้บุคคลภายนอก</p>
-   <h4>8. สิทธิ์ของคุณ</h4><p>คุณขอดู แก้ไข หรือลบข้อมูลของคุณได้ โดยติดต่อ Support ผ่านเมนูโปรไฟล์</p>
+<h4>4. การเริ่มซักและการรับ⁠ผ้า</h4><p>หลังสแกน QR ให้นำผ้าใส่เครื่องและกดปุ่มสตาร์ทที่เครื่อง เครื่องจะตรวจสอบว่ากดปุ่มเริ่มซักแล้ว และระบบจะนับเวลาซักให้ เมื่อซักเสร็จให้มารับผ้าทันที โดยเซนเซอร์น้ำหนักในเครื่องจะตรวจพบว่าไม่มีผ้าและปล่อยเครื่องให้คนถัดไปเอง ไม่ต้องกดในแอป ระบบจะแจ้งเตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ</p>
+
+   <h4>5. ผ้าที่ค้างในเครื่องเกิน 15 นาที</h4><p>เมื่อซักเสร็จ ผ้าจะอยู่ในเครื่องและเครื่องจะไม่เปิดให้ผู้อื่นจองในช่วง 15 นาทีแรก หากผ้าอยู่ในเครื่องเกิน 15 นาที ผู้ใช้คนถัดไปที่จองเครื่องนี้สามารถนำผ้าของคุณออกใส่ตะกร้าเพื่อใช้เครื่องต่อได้ทันที โดยไม่ต้องรอเจ้าของผ้า ระบบจะแจ้งเตือนเจ้าของผ้าที่มารับช้าเมื่อครบ 15 นาที เมื่อมีผู้จองต่อ และเมื่อผ้าถูกนำออกใส่ตะกร้า ผู้ที่นำผ้าของผู้อื่นออกต้องวางผ้าใส่ตะกร้าอย่างเรียบร้อย</p>
+
+   <h4>6. เครื่องขัดข้อง</h4><p>หากเครื่องทำงานผิดปกติ ให้แจ้งผ่านเมนูติดต่อ Support เพื่อให้ช่างตรวจสอบ และห้ามพยายามซ่อมเครื่องด้วยตนเอง</p>
+
+   <h4>7. ข้อมูลที่เราเก็บ</h4><p>ชื่อที่แสดง อีเมลหรือบัญชีที่ใช้เข้าสู่ระบบ เบอร์โทรศัพท์ที่ใช้ยืนยันตัว⁠⁠ตน เบอร์ TrueMoney Wallet ที่เชื่อมไว้ (ถ้ามี) และประวัติการใช้เครื่องและการเติม⁠เงิน</p>
+
+   <h4>8. การใช้ข้อมูล</h4><p>ใช้เพื่อให้บริการ จัดคิว ส่งการแจ้ง⁠เตือน และป้องกันการใช้งานที่ผิดปกติ เราไม่ขายข้อมูลของคุณให้บุคคลภายนอก</p>
+
+   <h4>9. สิทธิ์ของคุณ</h4><p>คุณขอดู แก้ไข หรือลบข้อมูลของคุณได้ โดยติดต่อ Support ผ่านเมนูโปรไฟล์</p>
   </div>
   <p class="sub" id="tHint" style="text-align:center;margin-bottom:10px"></p>
   <button class="btn" id="tOk" onclick="acceptTerms()" disabled>ยอมรับและปิด</button><button class="btn ghost gap" onclick="closeSheet()">ปิด</button>`);
@@ -549,7 +560,7 @@ function tap(id){
 
 /* ---------- booking: deduct straight from wallet ---------- */
 let bM='wallet';
-function book(id,keep){const mm=machines.find(m=>m.id===id);if(mm.st==='done')return toast('ผ้าของผู้⁠ใช้คนก่อนยังอยู่ในเครื่อง จองไม่ได้จนกว่าเจ้าของจะรับ⁠ผ้า');if(!['free','done'].includes(mm.st))return toast('เครื่องนี้เพิ่งมีผู้⁠ใช้จองไปแล้ว');
+function book(id,keep){const mm=machines.find(m=>m.id===id);if(mm.st==='done'&&!canTake(mm))return toast('ผ้าของผู้ใช้คนก่อนยังอยู่ในเครื่อง จองได้เมื่อผ้าค้างเกิน '+GRACE+' นาที');if(!['free','done'].includes(mm.st))return toast('เครื่องนี้เพิ่งมีผู้⁠ใช้จองไปแล้ว');
   if(!canBook())return toast(blockMsg());
   if(!keep)bM=S.bal>=PRICE?'wallet':'cash';
   const ok=S.bal>=PRICE,cash=bM==='cash';
@@ -615,7 +626,7 @@ function renderLaundry(){
   const NOW={res:'ไปที่เครื่อง '+nm(order.id)+' แล้วยืนยันตัว⁠ตนภายใน '+RES+' นาที',coin:'หยอดเหรียญ ฿'+COIN+' ให้ครบ '+COINS+' เหรียญ',load:'ใส่⁠ผ้าลงเครื่อง ปิด⁠ฝา แล้วกดปุ่มสตาร์ท',wash:'',done:'ไปรับ⁠ผ้าที่เครื่อง '+nm(order.id)+' ตอนนี้',lost:'รีบไปรับ⁠ผ้าที่เครื่อง '+nm(order.id)+' ตอนนี้ มีคนจองต่อแล้ว'};
   const nowB=NOW[order.ph]?`<div class="now"><small>ตอนนี้ต้องทำ</small><b>${NOW[order.ph]}</b></div>`:'';
 const loadNote=order.ph==='load'?(order.take?'<div class="note">ผ้าของผู้⁠ใช้คนก่อนหน้ายังอยู่ในเครื่อง คุณสามารถนำ⁠ผ้าของเขาออกและใส่ตะกร้าก่อนได้เลย</div>':'')+`<div class="todo"><b class="th">ขั้นตอนการซัก⁠ผ้า</b>${['แยกผ้าสีเข้มกับสีอ่อน และเช็กกระเป๋าเสื้อผ้าให้ว่าง','เปิด⁠ฝา ใส่⁠ผ้าลงเครื่อง อย่าใส่แน่นเกินไป','ใส่ผงซักฟอกหรือน้ำยาซัก⁠ผ้า (ถ้าใช้) ตามปริมาณที่ฉลากแนะนำ','ปิด⁠ฝาให้สนิท','กดปุ่มสตาร์ทที่เครื่อง'].map((t,i)=>`<div class="step"><b>${i+1}</b><span>${t}</span></div>`).join('')}</div><p class="sub" style="margin:0 0 14px">เมื่อกดสตาร์ท เครื่องจะตรวจสอบและเริ่มนับเวลาซักให้อัตโนมัติ</p>`:'';
-  const note=resNote+cashInfo+(order.ph==='load'?loadNote:order.ph==='res'&&order.take?'<div class="note">'+TAKE+'</div>':order.ph==='done'?'<div class="note">ซักเสร็จแล้ว ผ้ายังอยู่ในเครื่อง ผู้อื่นจองเครื่องนี้ไม่ได้จนกว่าคุณจะรับ⁠ผ้า ระบบจะแจ้ง⁠เตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ หากเกิน 15 นาที เจ้า⁠หน้าที่หอ⁠พักจะนำ⁠ผ้าออกใส่ตะกร้า</div>':order.ph==='lost'?'<div class="note">มีผู้⁠ใช้จองเครื่องนี้ต่อแล้ว ผ้าของคุณอาจถูกนำออกใส่ตะกร้า รีบมารับ⁠ผ้า หากผ้าถูกนำออกแล้ว กรุณาติดต่อผู้ดูแลหอ⁠พักหากต้องการความช่วยเหลือ</div>':'');
+  const note=resNote+cashInfo+(order.ph==='load'?loadNote:order.ph==='res'&&order.take?'<div class="note">'+TAKE+'</div>':order.ph==='done'?'<div class="note">ซักเสร็จแล้ว ผ้ายังอยู่ในเครื่อง ระบบจะแจ้งเตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ หากเกิน 15 นาที ผู้ใช้คนถัดไปสามารถจองเครื่องและนำผ้าของคุณออกใส่ตะกร้าได้</div>':order.ph==='lost'?'<div class="note">มีผู้⁠ใช้จองเครื่องนี้ต่อแล้ว ผ้าของคุณอาจถูกนำออกใส่ตะกร้า รีบมารับ⁠ผ้า หากผ้าถูกนำออกแล้ว ผ้าจะอยู่ในตะกร้าที่ห้องซักผ้า</div>':'');
   el.innerHTML=`<div class="card hero s-${order.ph==='wash'?'wash':order.ph==='done'?'done':order.ph==='lost'?'open':'mine'}" style="--c:${P[0]}">
    ${nowB}<div class="chip" style="--c:var(--p);font-size:15px;padding:5px 16px">เครื่อง ${nm(order.id)}</div><div class="wmw">${wm({res:'r',coin:'r',load:'r',wash:'r',done:'y',lost:'r'}[order.ph],104)}</div><p class="sub">${P[1]}${nm(order.id)}</p><div class="big" id="bigT"></div><p class="sub" id="subT">${order.ph==='res'&&order.cash?'เวลาที่เหลือ เพื่อเดินไปยืนยันตัว⁠ตนที่เครื่อง':P[2]}</p>
    <div class="steps"><span class="${P[3]>=1?'on':''}">จอง</span><span class="${P[3]>=2?'on':''}">ใส่⁠ผ้า</span><span class="${P[3]>=3?'on':''}">กำลังซัก</span><span class="${P[3]>=4?'on':''}">รอเก็บ⁠ผ้า</span></div>${note}${order.ph==='done'||order.ph==='lost'?`<div class="kv" style="font-weight:600;margin-bottom:10px"><span>เซนเซอร์น้ำหนักในเครื่อง</span><b>${order.det2?'0.0 กก. · ไม่มีผ้า':(machines.find(x=>x.id===order.id).kg||3.8).toFixed(1)+' กก. · พบผ้า'}</b></div>`:''}${order.ph==='res'?'<p class="sub" style="margin-bottom:8px">เดโม: กดปุ่มด้านล่างแทนการเดินไปที่เครื่องจริง</p>':order.ph==='load'&&!order.det?'<p class="sub" style="margin-bottom:8px">เดโม: กดปุ่มด้านล่างแทนการกดสตาร์ทที่เครื่องจริง</p>':''}${act}</div>`;
@@ -626,7 +637,7 @@ function updLaundry(force){
   if(!force&&ph!==lastPh)return renderLaundry();
   if(!order)return;const m=machines.find(x=>x.id===order.id),b=$('#bigT');if(!b)return;
   if(ph==='load'){b.textContent='นำ⁠ผ้าใส่เครื่อง';b.style.fontSize='30px';$('#subT').textContent=order.det?'เครื่องกำลังตรวจสอบการกดปุ่มเริ่มซัก…':'ยืนยันตัว⁠ตนสำเร็จ แล้วกดสตาร์ทที่เครื่อง'}else if(ph==='res'||ph==='coin'||ph==='wash'){b.textContent=fmt(order.end-sim);b.classList.toggle('hot',ph!=='wash'&&order.end-sim<3*MIN)}
-  else if(ph==='done'){const l=(sim-m.at)/MIN;b.textContent='+'+fmt(sim-m.at);$('#subT').textContent=`ซักเสร็จมา ${Math.floor(l)} นาที · ผู้อื่นจองเครื่องนี้ไม่ได้จนกว่าคุณจะรับ⁠ผ้า`}
+  else if(ph==='done'){const l=(sim-m.at)/MIN;b.textContent='+'+fmt(sim-m.at);$('#subT').textContent=`ซักเสร็จมา ${Math.floor(l)} นาที · เกิน ${GRACE} นาที คนถัดไปนำผ้าออกได้`}
   else{b.textContent='+'+fmt(sim-m.at);$('#subT').textContent='มีผู้จองเครื่องนี้ต่อแล้ว'}
 }
 const SB=()=>order.det2?'<button class="btn ghost" disabled>เซนเซอร์กำลังตรวจน้ำหนักในเครื่อง…</button>':'<button class="btn yellow" onclick="pickUp()">จำลอง: หยิบผ้าออกจากเครื่อง</button>';
@@ -636,7 +647,14 @@ function pickUp(){
   setTimeout(()=>toast('เซนเซอร์ตรวจพบว่าน้ำหนักในเครื่องเป็น 0 กก. ผ้าถูกนำออกแล้ว'),900);
   setTimeout(()=>{if(order===o)collect();else if(others.includes(o))swapRun(id,collect)},2300);
 }
-function collect(){const m=machines.find(x=>x.id===order.id),nx=m.st==='open';if(nx){m.q=Math.max(0,(m.q||0)-1);npcStart(m)}else m.st='free';order.h.s='รับ⁠ผ้าแล้ว';order=null;toast(nx?'รับ⁠ผ้าเรียบร้อย ผู้ที่จองต่อใช้เครื่องได้แล้ว':'รับ⁠ผ้าเรียบร้อย เครื่องกลับมาว่างแล้ว');renderLaundry()}
+function collect(){
+  const m=machines.find(x=>x.id===order.id),nx=m.st==='open';
+  const pm=settlePts(order,m);
+  if(nx){m.q=Math.max(0,(m.q||0)-1);npcStart(m)}else m.st='free';
+  order.h.s='รับ⁠ผ้าแล้ว';order=null;
+  toast((nx?'รับ⁠ผ้าเรียบร้อย ผู้ที่จองต่อใช้เครื่องได้แล้ว':'รับ⁠ผ้าเรียบร้อย เครื่องกลับมาว่างแล้ว')+(pm?' · '+pm:''));
+  renderLaundry();
+}
 function ack(){order=null;renderLaundry()}
 let scanning=false;
 function startMachine(){
@@ -688,20 +706,20 @@ const lg=(k,x='')=>`<b class="pmi" style="${x}">${ic(k==='pp'?'qr':k==='cash'?'c
 const rw=(i,t,s,f)=>`<button class="row" onclick="${f}">${i[0]==='<'?i:`<span class="ico">${ic(i,20)}</span>`}<span class="t"><b>${t}</b><span class="sub">${s||''}</span></span>${ic('chev',18)}</button>`;
 function renderProfile(){
   $('#pb').innerHTML=`<div class="card" style="display:flex;gap:14px;align-items:center;margin-bottom:14px"><div class="av" style="width:56px;height:56px;font-size:22px">${dn()}</div><div><b style="font-size:18px">${esc(S.name)}</b><p class="sub">${esc(S.email)}</p></div></div>
-  <div class="card">${rw('user','บัญชีผู้⁠ใช้','เปลี่ยนชื่อที่แสดง',"sub('account')")}${rw(lg('tm'),'TrueMoney Wallet',S.tm?'เชื่อมแล้ว '+mask(S.tm):'ยังไม่ได้เชื่อม',"sub('tmw')")}${rw('clock','ประวัติการซัก','วัน เวลา และวิธีชำระเงิน',"sub('history')")}${rw('bell','ตั้งค่าการแจ้ง⁠เตือน','',"sub('settings')")}${rw('book','วิธีการใช้งาน','',"sub('howto')")}${rw('chat','ติดต่อ Support','หากพบปัญหาการใช้งาน',"sub('support')")}</div>
+  <div class="card">${rw('<span class="ico">⭐</span>','แต้มของฉัน',S.pts+' แต้ม',"sub('points')")}${rw('user','บัญชีผู้⁠ใช้','เปลี่ยนชื่อที่แสดง',"sub('account')")}${rw(lg('tm'),'TrueMoney Wallet',S.tm?'เชื่อมแล้ว '+mask(S.tm):'ยังไม่ได้เชื่อม',"sub('tmw')")}${rw('clock','ประวัติการซัก','วัน เวลา และวิธีชำระเงิน',"sub('history')")}${rw('bell','ตั้งค่าการแจ้ง⁠เตือน','',"sub('settings')")}${rw('book','วิธีการใช้งาน','',"sub('howto')")}${rw('chat','ติดต่อ Support','หากพบปัญหาการใช้งาน',"sub('support')")}</div>
   <button class="btn danger gap" style="margin-top:18px;display:flex;gap:8px;justify-content:center" onclick="logout()">${ic('out',20)}ออกจากระบบ</button>`;
 }
 const sw=(k,t,d)=>`<label class="row sw"><span class="t"><b>${t}</b><span class="sub">${d}</span></span><input type="checkbox" ${S.set[k]?'checked':''} onchange="S.set.${k}=this.checked"></label>`;
 const SUBS={
+ points:()=>['แต้มของฉัน',`   <div class="wal"><p style="opacity:.8;font-size:13px">แต้มสะสม</p>     <p style="font-size:38px;font-weight:700;margin:2px 0 4px">${S.pts} <span style="font-size:16px">แต้ม</span></p>     <p style="opacity:.8;font-size:12.5px">รับผ้าภายใน ${GRACE} นาที +${PT_ON} · ช้ากว่านั้น -${PT_LATE} · แต้มไม่ติดลบ</p></div>   <h3 style="margin:22px 0 8px;font-size:16px">สิทธิ์แลกแต้ม</h3>   <div class="card">${REWARDS.map(r=>{const ok=S.pts>=r;return `<div class="row"><span class="ico">${ok?'✅':'🔒'}</span><span class="t"><b>${r} แต้ม</b><span class="sub">${ok?'แลกสิทธิ์ได้แล้ว':'ขาดอีก '+(r-S.pts)+' แต้ม'}</span></span><div style="width:72px;height:6px;border-radius:6px;background:rgba(127,127,127,.25);overflow:hidden"><i style="display:block;height:100%;width:${Math.min(100,S.pts/r*100)}%;background:var(--p)"></i></div></div>`}).join('')}</div>   <p class="sub" style="margin:8px 2px">รายละเอียดของรางวัลแต่ละระดับกำหนดโดยผู้ดูแลหอพัก</p>   <h3 style="margin:22px 0 8px;font-size:16px">ประวัติแต้ม</h3>   <div class="card">${S.plog.length?'':'<p class="sub" style="text-align:center;padding:18px 0">ยังไม่มีประวัติแต้ม</p>'}${S.plog.map(l=>`<div class="row"><div class="t"><b>${l.t}</b><span class="sub">${fd(l.ts)} ${ft(l.ts)}</span></div><span class="${l.d>0?'pl':l.d<0?'mi':'sub'}">${l.d>0?'+':''}${l.d||'0'}</span></div>`).join('')}</div>`],
  account:()=>['บัญชีผู้⁠ใช้',`<div class="card"><label class="sub">ชื่อที่แสดง</label><input id="nm" class="field gap" style="margin-top:6px" value="${esc(S.name)}" maxlength="24"><label class="sub" style="display:block;margin-top:14px">บัญชีที่ใช้เข้าสู่ระบบ</label><input class="field" style="margin-top:6px;opacity:.7" value="${esc(S.email)}" disabled><label class="sub" style="display:block;margin-top:14px">เบอร์โทรที่ยืนยันแล้ว</label><input class="field" style="margin-top:6px;opacity:.7" value="${mask(S.phone||'0000000000')}" disabled><button class="btn gap" style="margin-top:18px" onclick="saveName()">บันทึก</button></div>`],
  tmw:()=>['TrueMoney Wallet',`<div class="card">${S.tm?`<div class="row">${lg('tm')}<span class="t"><b>เชื่อมต่อแล้ว</b><span class="sub">${mask(S.tm)}</span></span></div>`:'<p class="sub">เชื่อมเบอร์ TrueMoney เพื่อเติม⁠เงินเข้ากระเป๋าได้ทันที</p>'}
  <label class="sub" style="display:block;margin-top:14px">${S.tm?'เปลี่ยนเบอร์ที่เชื่อม':'เบอร์โทรศัพท์'}</label><input id="ph" class="field" style="margin-top:6px" inputmode="numeric" maxlength="10" placeholder="08XXXXXXXX"><div id="pe" class="warn"></div>
  <button class="btn" onclick="linkTm()">${S.tm?'เปลี่ยนเบอร์':'เชื่อมบัญชี'}</button>${S.tm?'<button class="btn danger gap" onclick="S.tm=null;toast(\'ยกเลิกการเชื่อมแล้ว\');sub(\'tmw\')">ยกเลิกการเชื่อม</button>':''}</div>`],
  history:()=>['ประวัติการซัก',`<div class="card">${hist.length?'':'<p class="sub" style="text-align:center;padding:18px 0">ยังไม่มีประวัติการซัก จองเครื่องแรกของคุณได้เลย</p>'}${hist.map(h=>`<div class="row"><span class="ico">${ic('washer',20)}</span><span class="t"><b>เครื่อง ${nm(h.id)} · ฿${h.p}</b><span class="sub">${fd(h.ts)} · ${ft(h.ts)}<br>ชำระด้วย${h.pm} · ${h.s}</span></span></div>`).join('')}</div>`],
- settings:()=>['ตั้งค่าการแจ้ง⁠เตือน',`<div class="card">${sw('wash','ผ้าใกล้เสร็จ / ซักเสร็จ','แจ้งเมื่อเหลือ 3 นาที และเมื่อซักเสร็จ')}${sw('late','แจ้ง⁠เตือนซ้ำเมื่อยังไม่รับ⁠ผ้า','ทุก 3 นาทีหลังซักเสร็จ จนกว่าจะรับ⁠ผ้า')}${sw('pay','การจองและการชำระเงิน','สรุปการหักเงินและเติม⁠เงิน')}</div>
- <h3 style="margin:22px 0 4px;font-size:16px">สำหรับผู้ทดลองแอป</h3><div class="card" style="margin-bottom:12px"><button class="btn ghost" onclick="staffBack='profile';show('staff')">เปิดมุมมองเจ้า⁠หน้าที่ (เดโม)</button></div>`],
- howto:()=>['วิธีการใช้งาน',`<div class="card">${['เติม⁠เงินเข้ากระเป๋าผ่าน TrueMoney Wallet หรือ QR PromptPay',`เลือกเครื่องสีเขียวแล้วกดจอง จากนั้นเลือกจ่ายจากกระเป๋า⁠เงิน (หักทันที) หรือจ่ายเงินสดด้วยเหรียญ ฿${COIN}`,`เดินไปที่เครื่องและสแกน QR ภายใน ${RES} นาที เพื่อยืนยันตัว⁠ตน หากจ่ายเงินสดให้หยอดเหรียญ ฿${COIN} จำนวน ${COINS} เหรียญที่ช่องหยอดเหรียญบนเครื่องให้ครบภายใน ${COINT} นาทีหลังสแกนด้วย แล้วนำ⁠ผ้าใส่เครื่องและกดสตาร์ท เครื่องจะตรวจสอบว่ากดปุ่มเริ่มซักแล้ว และเริ่มนับเวลาซักเอง`,'รอซัก⁠ผ้า ระบบแจ้ง⁠เตือนเมื่อใกล้เสร็จ','มารับ⁠ผ้าออกจากเครื่อง เซนเซอร์น้ำหนักจะตรวจพบว่าไม่มีผ้าและปล่อยเครื่องให้คนถัดไปเอง ไม่ต้องกดในแอป'].map((t,i)=>`<div class="step"><b>${i+1}</b><span>${t}</span></div>`).join('')}</div>
- <div class="note" style="margin-top:14px;background:var(--card)">เมื่อซักเสร็จ ผ้าจะอยู่ในเครื่องและไม่มีใครจองเครื่องนี้ได้จนกว่าคุณจะนำ⁠ผ้าออก ระบบจะแจ้ง⁠เตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ หากเกิน 15 นาที เจ้า⁠หน้าที่หอ⁠พักจะนำ⁠ผ้าออกใส่ตะกร้า</div>`],
+ settings:()=>['ตั้งค่าการแจ้ง⁠เตือน',`<div class="card">${sw('wash','ผ้าใกล้เสร็จ / ซักเสร็จ','แจ้งเมื่อเหลือ 3 นาที และเมื่อซักเสร็จ')}${sw('late','แจ้ง⁠เตือนซ้ำเมื่อยังไม่รับ⁠ผ้า','ทุก 3 นาทีหลังซักเสร็จ จนกว่าจะรับ⁠ผ้า')}${sw('pay','การจองและการชำระเงิน','สรุปการหักเงินและเติม⁠เงิน')}</div>`],
+ howto:()=>['วิธีการใช้งาน',`<div class="card">${['เติม⁠เงินเข้ากระเป๋าผ่าน TrueMoney Wallet หรือ QR PromptPay',`เลือกเครื่องสีเขียวแล้วกดจอง จากนั้นเลือกจ่ายจากกระเป๋า⁠เงิน (หักทันที) หรือจ่ายเงินสดด้วยเหรียญ ฿${COIN}`,`เดินไปที่เครื่องและสแกน QR ภายใน ${RES} นาที เพื่อยืนยันตัว⁠ตน หากจ่ายเงินสดให้หยอดเหรียญ ฿${COIN} จำนวน ${COINS} เหรียญที่ช่องหยอดเหรียญบนเครื่องให้ครบภายใน ${COINT} นาทีหลังสแกนด้วย แล้วนำ⁠ผ้าใส่เครื่องและกดสตาร์ท เครื่องจะตรวจสอบว่ากดปุ่มเริ่มซักแล้ว และเริ่มนับเวลาซักให้อัตโนมัติ`,'รอซัก⁠ผ้า ระบบแจ้ง⁠เตือนเมื่อใกล้เสร็จ','มารับ⁠ผ้าออกจากเครื่อง เซนเซอร์น้ำหนักจะตรวจพบว่าไม่มีผ้าและปล่อยเครื่องให้คนถัดไปเอง ไม่ต้องกดในแอป'].map((t,i)=>`<div class="step"><b>${i+1}</b><span>${t}</span></div>`).join('')}</div>
+ <div class="note" style="margin-top:14px;background:var(--card)">เมื่อซักเสร็จ ผ้าจะอยู่ในเครื่อง และไม่มีใครจองเครื่องนี้ได้ในช่วง 15 นาทีแรก ยกเว้นคุณนำผ้าออกก่อน ระบบจะแจ้ง⁠เตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ หากเกิน 15 นาที ผู้ใช้คนถัดไปสามารถจองเครื่องและนำผ้าของคุณออกใส่ตะกร้าได้</div>`],
  support:()=>['ติดต่อ Support',`<div class="card"><label class="sub">หัวข้อปัญหา</label><div class="seg" id="tp">${['เครื่องไม่ทำงาน','ชำระเงิน/เติม⁠เงิน','สแกน QR ไม่ได้','อื่น ๆ'].map((t,i)=>`<button class="${i?'':'on'}" onclick="document.querySelectorAll('#tp button').forEach(b=>b.classList.toggle('on',b===this))">${t}</button>`).join('')}</div>
  <textarea id="sm" class="field" placeholder="อธิบายปัญหาที่พบ"></textarea><button class="btn gap" style="margin-top:14px" onclick="sendSup()">ส่งเรื่อง</button></div><p class="sub" style="margin-top:14px;text-align:center">ทีมงานตอบกลับทางอีเมลหรือเบอร์โทรที่ยืนยันแล้วภายใน 1 วันทำการ</p>`],
  notif:()=>['การแจ้ง⁠เตือน',notifs.length?`<div class="card">${notifs.map((n,i)=>`<button class="nt" onclick="show('${n.go}')"><span class="u r"></span><span style="flex:1"><b style="font-weight:600">${n.title}</b><br><span class="sub" style="color:var(--text)">${n.body}</span><br><span class="sub">${fd(n.ts)} ${ft(n.ts)}</span></span></button>`).join('')}</div><button class="btn ghost gap" onclick="notifs=[];badge();sub('notif',subBack)">ล้างทั้งหมด</button>`:'<div class="card empty">ยังไม่มีการแจ้ง⁠เตือน</div>']
@@ -724,53 +742,34 @@ function npc(m){
   else if(m.st==='free'&&sim>=m.nxt){if(machines.filter(x=>x.st==='free').length>1||order)npcStart(m);else m.nxt=sim+2*MIN}
 }
 
-$('#lg4').innerHTML=ic('washer',40);
-function staffLogin(){if($('#su').value.trim()==='staff'&&$('#sp').value==='staff1234'){STAFFIN=true;$('#sle').textContent='';$('#sp').value='';toast('เข้าสู่ระบบเจ้า⁠หน้าที่แล้ว');show('staff')}else $('#sle').textContent='ชื่อผู้⁠ใช้หรือรหัสผ่านไม่ถูกต้อง'}
-function staffOut(){STAFFIN=false;show(staffBack)}
-const SNOTE='<div class="note" style="margin-bottom:12px">เจ้า⁠หน้าที่ประจำ: คุณสมศักดิ์ (จำลอง) · ออนไลน์ หลังผ้าค้างเกิน 15 นาที ระบบจำลองให้เจ้า⁠หน้าที่ประจำไปนำ⁠ผ้าออกเองภายใน 2–8 นาที คุณกดนำ⁠ผ้าออกก่อนได้</div>';
-function renderStaff(){
-  const el=$('#stf');if(!el)return;
-  const sig=Math.floor(sim/MIN)+machines.map(m=>m.st).join()+STAFFLOG.length;if(el.dataset.k===sig)return;el.dataset.k=sig;
-  const col={free:'var(--green)',done:'var(--yellow)'};
-  el.innerHTML=SNOTE+machines.map(m=>{const x=Math.floor((sim-m.at)/MIN),dn=m.st==='done',ok=dn&&x>=STAFF;
-   return `<div class="card" style="margin-bottom:12px"><div class="mh"><b>เครื่อง ${nm(m.id)}</b><span class="chip" style="--c:${col[m.st]||'var(--red)'}">${LBL[m.st]}</span></div><p class="sub" style="margin:6px 0 ${dn?10:0}px">${dn?'ผ้าค้างมา '+x+' นาที · เซนเซอร์พบผ้า '+(m.kg||3.8)+' กก.'+(ok&&m.sa?' · เจ้า⁠หน้าที่ประจำกำลังไปนำ⁠ผ้าออก':''):tmTxt(m)}</p>${dn?(ok?`<button class="btn yellow" onclick="staffRemove(${m.id})">นำ⁠ผ้าออกใส่ตะกร้า</button>`:`<button class="btn ghost" disabled>นำ⁠ผ้าออกได้ในอีก ${STAFF-x} นาที</button>`):''}</div>`}).join('')
-   +`<h3 style="margin:20px 0 8px;font-size:16px">ประวัติการนำ⁠ผ้าออก</h3><div class="card">${STAFFLOG.length?STAFFLOG.map(l=>`<div class="row"><span class="ico">${ic('washer',20)}</span><span class="t"><b>เครื่อง ${nm(l.id)}</b><span class="sub">${fd(l.ts)} ${ft(l.ts)} · ${l.by}</span></span></div>`).join(''):'<p class="sub" style="text-align:center;padding:14px 0">ยังไม่มีการนำ⁠ผ้าออก</p>'}</div><button class="btn ghost gap" style="margin-top:14px" onclick="staffOut()">ออกจากระบบเจ้า⁠หน้าที่</button>`;
-}
-function staffRemove(id,auto){
-  const m=machines.find(x=>x.id===id);
-  if(!m||m.st!=='done'||sim-m.at<STAFF*MIN)return toast('ยังนำ⁠ผ้าออกไม่ได้ ต้องค้างเกิน '+STAFF+' นาที');
-  if(allOrd().some(o=>o.id===id))swapRun(id,()=>{if(order&&order.id===id){order.h.s='เจ้า⁠หน้าที่นำ⁠ผ้าออกใส่ตะกร้า';notify('late','ผ้าของคุณถูกนำออกจากเครื่อง '+nm(id),'ผ้าอยู่ในเครื่องเกิน '+STAFF+' นาที เจ้า⁠หน้าที่นำ⁠ผ้าใส่ตะกร้าแล้ว มารับได้ที่เจ้า⁠หน้าที่หอ⁠พัก');order=null}});
-  m.st='free';m.q=0;m.nxt=sim+rnd(1,6)*MIN;m.sa=0;STAFFLOG.unshift({ts:new Date(),id,by:auto?'โดย คุณสมศักดิ์ (เจ้า⁠หน้าที่ประจำ · จำลอง)':'โดย เจ้า⁠หน้าที่ที่ล็อกอิน'});
-  if(!auto)toast('นำ⁠ผ้าออกจากเครื่อง '+nm(id)+' แล้ว');$('#stf').dataset.k='';if(document.querySelector('.view.active').id==='v-staff')renderStaff();
-}
 function tick(){
   const nt=performance.now(),dt=Math.min(nt-(tick.l||nt),5000);tick.l=nt;sim+=dt*S.speed;
   const tickM=m=>{
     const mine=order&&order.id===m.id;
     if(m.st==='open'&&sim>=m.takeAt){
-      if(mine){order.h.s='ผ้าถูกนำออกใส่ตะกร้า';notify('late','ผ้าของคุณถูกนำออกใส่ตะกร้า','มีผู้⁠ใช้จองเครื่อง '+nm(m.id)+' ต่อ ผ้าของคุณถูกนำออกใส่ตะกร้าแล้ว กรุณาติดต่อผู้ดูแลหอ⁠พัก');order=null}
+      if(mine){order.h.s='ผ้าถูกนำออกใส่ตะกร้า';notify('late','ผ้าของคุณถูกนำออกใส่ตะกร้า','ผู้ใช้คนถัดไปจองเครื่อง '+nm(m.id)+' ต่อและนำผ้าของคุณออกใส่ตะกร้าแล้ว กรุณามารับผ้าที่ห้องซักผ้า');order=null}
       if(m.q>0)m.q--;npcStart(m);
     }
     if(!mine)npc(m);
     if(m.st==='wash'&&sim>=m.end){
-      m.st='done';m.at=m.end;m.sa=0;m.kg=+(2.5+Math.random()*4).toFixed(1);m.coll=m.at+lateMin()*MIN;
+      m.st='done';m.at=m.end;m.kg=+(2.5+Math.random()*4).toFixed(1);m.coll=m.at+lateMin()*MIN;
       m.bookAt=Infinity;
       if(mine&&order.ph==='wash'){order.ph='done';order.nxt=sim+REMIND*MIN;order.h.s='ซักเสร็จ รอเก็บ⁠ผ้า';notify('wash','ซักเสร็จแล้ว','เครื่อง '+nm(m.id)+' ซักเสร็จแล้ว มารับ⁠ผ้าได้เลย')}
     }
     if(m.st==='done'&&sim>=m.bookAt){
       m.st='open';m.takeAt=sim+rnd(2,5)*MIN;
-      if(mine&&order.ph==='done'){order.ph='lost';order.h.s='มีผู้จองต่อ';notify('late','มีผู้จองเครื่อง '+nm(m.id)+' ต่อ','มีผู้⁠ใช้จองเครื่องที่ผ้าของคุณยังอยู่ ผ้าของคุณอาจถูกนำออกใส่ตะกร้า รีบลงมารับ⁠ผ้า','laundry')}
+      if(mine&&order.ph==='done'){order.ph='lost';order.h.s='มีผู้จองต่อ';notify('late','มีผู้จองเครื่อง '+nm(m.id)+' ต่อ','มีผู้⁠ใช้จองเครื่องที่ผ้าของคุณยังอยู่ ผ้าของคุณอาจถูกนำออกใส่ตะกร้า รีบมารับ⁠ผ้า','laundry')}
     }
   };
   machines.forEach(m=>swapRun(m.id,()=>tickM(m)));
-  machines.forEach(m=>{if(m.st==='done'&&sim-m.at>=STAFF*MIN){if(!m.sa)m.sa=sim+rnd(2,8)*MIN;if(sim>=m.sa)staffRemove(m.id,1)}});
   const chk=()=>{if(order){
     if((order.ph==='res'||order.ph==='coin')&&sim>=order.end)expireBooking();
-    else if(order.ph==='wash'&&!order.nw&&order.end-sim<=3*MIN){order.nw=1;notify('wash','ผ้าใกล้ซักเสร็จแล้ว','ผ้าใกล้ซักเสร็จแล้ว เตรียมตัวลงมารับได้เลย')}else if(order.ph==='done'&&sim>=order.nxt){const l=Math.floor((sim-machines.find(x=>x.id===order.id).at)/MIN);order.nxt+=REMIND*MIN;notify('late','ผ้ายังอยู่ในเครื่อง '+nm(order.id),(l>=STAFF?'ซักเสร็จมา '+l+' นาทีแล้ว เกิน '+STAFF+' นาที เจ้า⁠หน้าที่หอ⁠พักสามารถนำ⁠ผ้าของคุณออกจากเครื่องได้ทุกเมื่อ กรุณารีบมารับ':'ซักเสร็จมา '+l+' นาทีแล้ว ผ้ายังอยู่ในเครื่อง กรุณามารับ⁠ผ้าเพื่อให้คนอื่นใช้เครื่องได้'))}
+    else if(order.ph==='wash'&&!order.nw&&order.end-sim<=3*MIN){order.nw=1;notify('wash','ผ้าใกล้ซักเสร็จแล้ว','ผ้าใกล้ซักเสร็จแล้ว เตรียมตัวลงมารับได้เลย')}else if(order.ph==='done'&&sim>=order.nxt){const l=Math.floor((sim-machines.find(x=>x.id===order.id).at)/MIN);order.nxt+=REMIND*MIN;notify('late','ผ้ายังอยู่ในเครื่อง '+nm(order.id),(l>=GRACE?'ซักเสร็จมา '+l+' นาทีแล้ว เกิน '+GRACE+' นาที ผู้ใช้คนถัดไปสามารถจองเครื่องและนำผ้าของคุณออกได้ กรุณารีบมารับ':'ซักเสร็จมา '+l+' นาทีแล้ว ผ้ายังอยู่ในเครื่อง กรุณามารับ⁠ผ้าเพื่อให้คนอื่นใช้เครื่องได้'))}
+    if(order.ph==='done'&&!order.n15&&sim-machines.find(x=>x.id===order.id).at>=GRACE*MIN){order.n15=1;notify('late','ครบ '+GRACE+' นาที ผู้ใช้คนถัดไปนำผ้าของคุณออกได้แล้ว','ผ้าของคุณอยู่ในเครื่อง '+nm(order.id)+' เกินกำหนดแล้ว ผู้ใช้คนถัดไปจองเครื่องและนำผ้าของคุณออกใส่ตะกร้าได้ รีบมารับผ้า','laundry')}
   }};
   chk();others.slice().forEach(o=>swapRun(o.id,chk));if(!order&&others.length)order=others.shift();
   const v=document.querySelector('.view.active').id;
-  if(v==='v-home')updGrid();else if(v==='v-laundry')updLaundry();else if(v==='v-staff')renderStaff();
+  if(v==='v-home')updGrid();else if(v==='v-laundry')updLaundry();
 }
 /* ---------- language (TH / EN) ---------- */
 /*I18N-START*/
@@ -818,24 +817,14 @@ const DICT=[
 ['เซนเซอร์น้ำหนักในเครื่อง','In-machine weight sensor'],[' กก. · ไม่มีผ้า',' kg · empty'],[' กก. · พบผ้า',' kg · clothes detected'],[' กก.',' kg'],[' · เซนเซอร์พบผ้า ',' · sensor: clothes '],
 ['จำลอง: หยิบผ้าออกจากเครื่อง','Simulate: take clothes out of the machine'],['เซนเซอร์กำลังตรวจน้ำหนักในเครื่อง…','Sensor is checking the weight in the machine…'],
 ['เซนเซอร์ตรวจพบว่าน้ำหนักในเครื่องเป็น 0 กก. ผ้าถูกนำออกแล้ว','Sensor detected 0 kg in the machine. Clothes removed.'],
-['เข้าสู่ระบบเจ้า⁠หน้าที่แล้ว','Staff logged in'],['เข้าสู่ระบบเจ้า⁠หน้าที่','Staff login'],['สำหรับเจ้า⁠หน้าที่หอ⁠พัก','For dorm staff'],['โหมดเดโม · ใช้บัญชีนี้','Demo mode · use this account'],
-['ชื่อผู้⁠ใช้หรือรหัสผ่านไม่ถูกต้อง','Incorrect username or password'],['ชื่อผู้⁠ใช้','Username'],['รหัสผ่าน','Password'],['ออกจากระบบเจ้า⁠หน้าที่','Log out of staff'],
-['เจ้า⁠หน้าที่ประจำ: คุณสมศักดิ์ (จำลอง) · ออนไลน์ หลังผ้าค้างเกิน 15 นาที ระบบจำลองให้เจ้า⁠หน้าที่ประจำไปนำ⁠ผ้าออกเองภายใน 2–8 นาที คุณกดนำ⁠ผ้าออกก่อนได้','On-duty staff: Somsak (simulated) · online. After clothes are left over 15 minutes, the simulated staff removes them within 2–8 minutes. You can remove them sooner.'],
-[' · เจ้า⁠หน้าที่ประจำกำลังไปนำ⁠ผ้าออก',' · on-duty staff is on the way'],
-['โดย คุณสมศักดิ์ (เจ้า⁠หน้าที่ประจำ · จำลอง)','by Somsak (on-duty staff · simulated)'],['โดย เจ้า⁠หน้าที่ที่ล็อกอิน','by the logged-in staff'],
 ['สลับไปดูเครื่อง {n}','Switched to machine $1'],
 ['อีเมลหรือเบอร์โทรศัพท์','Email or phone number'],['กรุณากรอกอีเมลที่ถูกต้อง หรือเบอร์โทรศัพท์ 10 หลัก','Enter a valid email or a 10-digit phone number'],
-['เข้าสู่ระบบสำหรับเจ้า⁠หน้าที่หอ⁠พัก','Dorm staff login'],['เปิดมุมมองเจ้า⁠หน้าที่ (เดโม)','Open staff view (demo)'],['มุมมองเจ้า⁠หน้าที่หอ⁠พัก','Dorm staff view'],
-['เดโม · นำ⁠ผ้าออกได้เมื่อค้างเกิน 15 นาที','Demo · clothes can be removed after 15 minutes'],['ผ้าค้างมา {n} นาที','Clothes left for $1 min'],
-['นำ⁠ผ้าออกใส่ตะกร้า','Move clothes to basket'],['นำ⁠ผ้าออกได้ในอีก {n} นาที','Can be removed in $1 min'],['ประวัติการนำ⁠ผ้าออก','Removal history'],
-['ยังไม่มีการนำ⁠ผ้าออก','No removals yet'],['ออกจากมุมมองเจ้า⁠หน้าที่','Leave staff view'],['เจ้า⁠หน้าที่นำ⁠ผ้าออกใส่ตะกร้า','Staff moved clothes to basket'],
-['ยังนำ⁠ผ้าออกไม่ได้ ต้องค้างเกิน 15 นาที','Cannot remove yet. Clothes must be left over 15 minutes'],['นำ⁠ผ้าออกจากเครื่อง {n} แล้ว','Clothes removed from machine $1'],
+['ผ้าค้างมา {n} นาที','Clothes left for $1 min'],
 ['ผ้าของคุณถูกนำออกจากเครื่อง {n}','Your clothes were removed from machine $1'],
-['ผ้าอยู่ในเครื่องเกิน 15 นาที เจ้า⁠หน้าที่นำ⁠ผ้าใส่ตะกร้าแล้ว มารับได้ที่เจ้า⁠หน้าที่หอ⁠พัก','Your clothes were left over 15 minutes. Staff moved them to a basket. Collect them from dorm staff.'],
-['ซักเสร็จมา {n} นาทีแล้ว เกิน 15 นาที เจ้า⁠หน้าที่หอ⁠พักสามารถนำ⁠ผ้าของคุณออกจากเครื่องได้ทุกเมื่อ กรุณารีบมารับ','Finished $1 min ago. Over 15 minutes: staff may remove your clothes at any time. Please collect now.'],
+['ซักเสร็จมา {n} นาทีแล้ว เกิน 15 นาที ผู้ใช้คนถัดไปสามารถจองเครื่องและนำผ้าของคุณออกได้ กรุณารีบมารับ','Finished $1 min ago. Over 15 minutes: the next user may book the machine and take your clothes out. Please collect now.'],
 ['ผ้ายังอยู่ในเครื่อง {n}','Clothes still in machine $1'],
 ['ซักเสร็จมา {n} นาทีแล้ว ผ้ายังอยู่ในเครื่อง กรุณามารับ⁠ผ้าเพื่อให้คนอื่นใช้เครื่องได้','Finished $1 min ago. Your clothes are still inside. Please collect them so others can use the machine.'],
-['ผ้าของผู้⁠ใช้คนก่อนยังอยู่ในเครื่อง จองไม่ได้จนกว่าเจ้าของจะรับ⁠ผ้า','The previous user\'s clothes are still inside. You can book once they collect them.'],
+['ผ้าของผู้ใช้คนก่อนยังอยู่ในเครื่อง จองได้เมื่อผ้าค้างเกิน 15 นาที','The previous user\'s clothes are still inside. You can book once they have been there over 15 minutes.'],
 ['แจ้ง⁠เตือนซ้ำเมื่อยังไม่รับ⁠ผ้า','Repeat reminders until collected'],['ทุก 3 นาทีหลังซักเสร็จ จนกว่าจะรับ⁠ผ้า','Every 3 minutes after the wash ends, until you collect'],
 ['แตะเพื่อดูรายละเอียดเชิงลึก ›','Tap for detailed view ›'],
 ['ความหนาแน่นเชิงลึก 24 ชม.','Detailed crowd levels (24 h)'],
@@ -850,15 +839,16 @@ const DICT=[
 ['ให้เวลาเจ้าของผ้า 10 นาทีก่อน จึงจะจองต่อได้','The owner has 10 minutes first before you can book next'],
 ['รอเจ้าของผ้า','Waiting for owner'],
 ['รอเก็บ⁠ผ้า · ผ้ายังอยู่ จองไม่ได้','Waiting for collection · not bookable'],
-['ซักเสร็จมา {n} นาที · ผู้อื่นจองเครื่องนี้ไม่ได้จนกว่าคุณจะรับ⁠ผ้า','Finished {n} min ago · nobody else can book it until you collect'],
-['ซักเสร็จแล้ว ผ้ายังอยู่ในเครื่อง ผู้อื่นจองเครื่องนี้ไม่ได้จนกว่าคุณจะรับ⁠ผ้า ระบบจะแจ้ง⁠เตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ หากเกิน 15 นาที เจ้า⁠หน้าที่หอ⁠พักจะนำ⁠ผ้าออกใส่ตะกร้า','Wash finished. Your clothes are still inside and nobody else can book this machine until you collect them. You will be reminded every 3 minutes. After 15 minutes, dorm staff may move your clothes to a basket.'],
-['เมื่อซักเสร็จ ผ้าจะอยู่ในเครื่องและไม่มีใครจองเครื่องนี้ได้จนกว่าคุณจะนำ⁠ผ้าออก ระบบจะแจ้ง⁠เตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ หากเกิน 15 นาที เจ้า⁠หน้าที่หอ⁠พักจะนำ⁠ผ้าออกใส่ตะกร้า','When the wash finishes, your clothes stay in the machine and nobody can book it until you take them out. You will be reminded every 3 minutes. After 15 minutes, dorm staff may move your clothes to a basket.'],
-['หลังสแกน QR ให้นำ⁠ผ้าใส่เครื่องและกดปุ่มสตาร์ทที่เครื่อง เครื่องจะตรวจสอบว่ากดปุ่มเริ่มซักแล้ว และระบบจะนับเวลาซักให้ เมื่อซักเสร็จให้มารับ⁠ผ้าทันที ผ้าจะอยู่ในเครื่องและเครื่องจะไม่เปิดให้ผู้อื่นจองจนกว่าคุณจะนำ⁠ผ้าออก โดยเซนเซอร์น้ำหนักในเครื่องจะตรวจพบว่าไม่มีผ้าและปล่อยเครื่องให้คนถัดไปเอง ไม่ต้องกดในแอป ระบบจะแจ้ง⁠เตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ หากผ้าอยู่ในเครื่องเกิน 15 นาที เจ้า⁠หน้าที่หอ⁠พักสามารถนำ⁠ผ้าของคุณออกใส่ตะกร้าเพื่อให้เครื่องว่างได้','After scanning the QR code, put your clothes in and press Start on the machine. The machine checks that Start was pressed and the system times the wash. Collect your clothes as soon as it finishes. Your clothes stay in the machine and nobody else can book it until you take them out; the in-machine weight sensor detects it is empty and releases the machine to the next person automatically, with no need to tap anything in the app. You will be reminded every 3 minutes until you collect. If they stay inside for more than 15 minutes, dorm staff may move them to a basket so the machine can be used.'],
-['บริการนี้ให้นักศึกษาจองและใช้เครื่อง⁠ซัก⁠ผ้าของหอ⁠พักผ่านบัญชีที่ยืนยันเบอร์โทรศัพท์แล้ว หนึ่งบัญชีจองพร้อมกันได้สูงสุด 3 เครื่อง (จองเครื่องถัดไปได้เมื่อเครื่องก่อนหน้าเริ่มซักแล้ว) และห้ามให้ผู้อื่นใช้บัญชีแทน','This service lets students book and use the dorm washing machines through an account verified by phone number. Each account can hold up to 3 bookings at once (you can book the next machine once the previous one has started washing), and you must not let others use your account.'],
+['ซักเสร็จมา {n} นาที · เกิน 15 นาที คนถัดไปนำผ้าออกได้','Finished {n} min ago · after 15 min the next user can take them out'],
+['ซักเสร็จแล้ว ผ้ายังอยู่ในเครื่อง ระบบจะแจ้งเตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ หากเกิน 15 นาที ผู้ใช้คนถัดไปสามารถจองเครื่องและนำผ้าของคุณออกใส่ตะกร้าได้','Wash finished. Your clothes are still inside. You will be reminded every 3 minutes. After 15 minutes, the next user may book the machine and take your clothes out into a basket.'],
+['เมื่อซักเสร็จ ผ้าจะอยู่ในเครื่อง และไม่มีใครจองเครื่องนี้ได้ในช่วง 15 นาทีแรก ยกเว้นคุณนำผ้าออกก่อน ระบบจะแจ้ง⁠เตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ หากเกิน 15 นาที ผู้ใช้คนถัดไปสามารถจองเครื่องและนำผ้าของคุณออกใส่ตะกร้าได้','When the wash finishes, your clothes stay in the machine and nobody can book it during the first 15 minutes unless you take them out. You will be reminded every 3 minutes. After 15 minutes, the next user may book the machine and take your clothes out into a basket.'],
+['หลังสแกน QR ให้นำผ้าใส่เครื่องและกดปุ่มสตาร์ทที่เครื่อง เครื่องจะตรวจสอบว่ากดปุ่มเริ่มซักแล้ว และระบบจะนับเวลาซักให้ เมื่อซักเสร็จให้มารับผ้าทันที โดยเซนเซอร์น้ำหนักในเครื่องจะตรวจพบว่าไม่มีผ้าและปล่อยเครื่องให้คนถัดไปเอง ไม่ต้องกดในแอป ระบบจะแจ้งเตือนซ้ำทุก 3 นาทีจนกว่าคุณจะมารับ','After scanning the QR code, put your clothes in and press Start on the machine. The machine checks that Start was pressed and the system times the wash. Collect your clothes as soon as it finishes. The in-machine weight sensor detects it is empty and releases the machine to the next person automatically, with no need to tap anything in the app. You will be reminded every 3 minutes until you collect them.'],
+['เมื่อซักเสร็จ ผ้าจะอยู่ในเครื่องและเครื่องจะไม่เปิดให้ผู้อื่นจองในช่วง 15 นาทีแรก หากผ้าอยู่ในเครื่องเกิน 15 นาที ผู้ใช้คนถัดไปที่จองเครื่องนี้สามารถนำผ้าของคุณออกใส่ตะกร้าเพื่อใช้เครื่องต่อได้ทันที โดยไม่ต้องรอเจ้าของผ้า ระบบจะแจ้งเตือนเจ้าของผ้าที่มารับช้าเมื่อครบ 15 นาที เมื่อมีผู้จองต่อ และเมื่อผ้าถูกนำออกใส่ตะกร้า ผู้ที่นำผ้าของผู้อื่นออกต้องวางผ้าใส่ตะกร้าอย่างเรียบร้อย','When the wash finishes, your clothes stay in the machine and nobody else can book it during the first 15 minutes. If your clothes stay inside for more than 15 minutes, the next user who booked this machine may take them out and put them in a basket right away, without waiting for you. The system notifies late owners when 15 minutes is up, when someone books next, and when the clothes are moved to the basket. Anyone moving another person\'s clothes must place them neatly in the basket.'],
+['บริการนี้ให้นักศึกษาจองและใช้เครื่อง⁠ซัก⁠⁠ผ้าของหอ⁠พักผ่านบัญชีที่ยืนยันเบอร์โทรศัพท์แล้ว หนึ่งบัญชีจองพร้อมกันได้สูงสุด 3 เครื่อง (จองเครื่องถัดไปได้เมื่อเครื่องก่อนหน้าเริ่มซักแล้ว) และห้ามให้ผู้อื่นใช้บัญชีแทน','This service lets students book and use the dorm washing machines through an account verified by phone number. Each account can hold up to 3 bookings at once (you can book the next machine once the previous one has started washing), and you must not let others use your account.'],
 ['ทีมงานตอบกลับทางอีเมลหรือเบอร์โทรที่ยืนยันแล้วภายใน 1 วันทำการ','Our team replies by email or your verified phone number within 1 business day'],
 /* auth */
 ['หอ⁠พักนักศึกษา ม.อ.','PSU Student Dorm'],
-['ระบบจัดการคิวเครื่อง⁠ซัก⁠ผ้าอัจฉริยะสำหรับหอ⁠พักนักศึกษา','Smart washing machine queue management for student dorms'],
+['ระบบจัดการคิวเครื่อง⁠ซัก⁠⁠ผ้าอัจฉริยะสำหรับหอ⁠พักนักศึกษา','Smart washing machine queue management for student dorms'],
 ['อีเมล @psu.ac.th หรือเบอร์โทรศัพท์','PSU email (@psu.ac.th) or phone number'],
 ['อีเมลมหาวิทยาลัยหรือเบอร์โทรศัพท์','University email or phone number'],
 ['กรุณากรอกอีเมลที่ถูกต้อง หรือเบอร์โทรศัพท์ 10 หลัก','Enter a valid email or a 10-digit phone number'],
@@ -866,7 +856,7 @@ const DICT=[
 ['เข้าสู่ระบบ','Log in'],
 ['ออกจากระบบแล้ว','Logged out'],
 ['ออกจากระบบ','Log out'],
-['ยืนยันตัว⁠ตนด้วยเบอร์โทรศัพท์','Verify with your phone number'],
+['ยืนยันตัว⁠⁠ตนด้วยเบอร์โทรศัพท์','Verify with your phone number'],
 ['เพื่อความปลอดภัย ทุกบัญชีต้องยืนยันตัว⁠ตนด้วยเบอร์โทรศัพท์','For your security, every account must be verified with a phone number'],
 ['เบอร์โทรศัพท์ 08XXXXXXXX','Phone number 08XXXXXXXX'],
 ['ยืนยันเบอร์โทรศัพท์','Verify your phone number'],
@@ -908,15 +898,18 @@ const DICT=[
 ['1. การใช้บริการ','1. Using the service'],
 ['2. การจองและค่าบริการ','2. Booking and fees'],
 ['3. กระเป๋า⁠เงินและการเติม⁠เงิน','3. Wallet and top-ups'],
+['5. ผ้าที่ค้างในเครื่องเกิน 15 นาที','5. Clothes left over 15 minutes'],
+['ครบ {n} นาที ผู้ใช้คนถัดไปนำผ้าของคุณออกได้แล้ว','Over $1 minutes: the next user can now take your clothes out'],
+['ผ้าของคุณอยู่ในเครื่อง {n} เกินกำหนดแล้ว ผู้ใช้คนถัดไปจองเครื่องและนำผ้าของคุณออกใส่ตะกร้าได้ รีบมารับผ้า','Your clothes in machine $1 are overdue. The next user can book the machine and move your clothes to the basket. Please collect them now.'],
 ['4. การเริ่มซักและการรับ⁠ผ้า','4. Starting a wash and collecting clothes'],
-['5. เครื่องขัดข้อง','5. Machine problems'],
-['6. ข้อมูลที่เราเก็บ','6. Information we collect'],
-['7. การใช้ข้อมูล','7. How we use information'],
-['8. สิทธิ์ของคุณ','8. Your rights'],
+['6. เครื่องขัดข้อง','6. Machine problems'],
+['7. ข้อมูลที่เราเก็บ','7. Information we collect'],
+['8. การใช้ข้อมูล','8. How we use information'],
+['9. สิทธิ์ของคุณ','9. Your rights'],
 ['เติม⁠เงินได้ผ่าน TrueMoney Wallet หรือ QR PromptPay ครั้งละ ฿10 – ฿5,000 (เป็นจำนวนเต็ม) ยอดคงเหลือใช้ชำระค่าซัก⁠ผ้าในแอปนี้เท่านั้น ไม่สามารถโอนให้ผู้อื่นได้','You can top up through TrueMoney Wallet or QR PromptPay, ฿10 – ฿5,000 at a time (whole numbers). Your balance can only be used to pay for laundry in this app and cannot be transferred to others.'],
 ['หากเครื่องทำงานผิดปกติ ให้แจ้งผ่านเมนูติดต่อ Support เพื่อให้ช่างตรวจสอบ และห้ามพยายามซ่อมเครื่องด้วยตนเอง','If a machine is not working properly, report it through Contact Support so a technician can check it. Do not try to repair the machine yourself.'],
 ['ชื่อที่แสดง อีเมลหรือบัญชีที่ใช้เข้าสู่ระบบ เบอร์โทรศัพท์ที่ใช้ยืนยันตัว⁠ตน เบอร์ TrueMoney Wallet ที่เชื่อมไว้ (ถ้ามี) และประวัติการใช้เครื่องและการเติม⁠เงิน','Your display name, the email or account you log in with, the phone number used for verification, the TrueMoney Wallet number you linked (if any), and your machine usage and top-up history.'],
-['ใช้เพื่อให้บริการ จัดคิว ส่งการแจ้ง⁠เตือน และป้องกันการใช้งานที่ผิดปกติ เราไม่ขายข้อมูลของคุณให้บุคคลภายนอก','Used to provide the service, manage queues, send notifications and prevent abnormal use. We do not sell your information to third parties.'],
+['ใช้เพื่อให้บริการ จัดคิว ส่งการแจ้ง⁠⁠เตือน และป้องกันการใช้งานที่ผิดปกติ เราไม่ขายข้อมูลของคุณให้บุคคลภายนอก','Used to provide the service, manage queues, send notifications and prevent abnormal use. We do not sell your information to third parties.'],
 ['คุณขอดู แก้ไข หรือลบข้อมูลของคุณได้ โดยติดต่อ Support ผ่านเมนูโปรไฟล์','You can ask to view, correct or delete your information by contacting Support from the Profile menu.'],
 ['ยอมรับและปิด','Accept and close'],
 ['ปิด','Close'],
@@ -944,11 +937,11 @@ const DICT=[
 ['ผ้าของผู้⁠ใช้คนก่อนหน้ายังอยู่ในเครื่อง คุณสามารถนำ⁠ผ้าของเขาออกและใส่ตะกร้าได้เลย จากนั้นสแกน QR ที่เครื่อง','The previous user\'s clothes are still in the machine. You can take them out and put them in the basket, then scan the QR code on the machine.'],
 ['เครื่องนี้ซักเสร็จแล้วแต่ผ้ายังอยู่ในเครื่อง เมื่อจองแล้ว คุณสามารถนำ⁠ผ้าของผู้⁠ใช้คนก่อนหน้าออกและใส่ตะกร้าได้เลย','This machine has finished but the clothes are still inside. After booking, you can take the previous user\'s clothes out and put them in the basket.'],
 ['ผ้าของผู้⁠ใช้คนก่อนหน้ายังอยู่ในเครื่อง คุณสามารถนำ⁠ผ้าของเขาออกและใส่ตะกร้าก่อนได้เลย','The previous user\'s clothes are still in the machine. You can take them out and put them in the basket first.'],
-['มีผู้⁠ใช้จองเครื่องนี้ต่อแล้ว ผ้าของคุณอาจถูกนำออกใส่ตะกร้า รีบมารับ⁠ผ้า หากผ้าถูกนำออกแล้ว กรุณาติดต่อผู้ดูแลหอ⁠พักหากต้องการความช่วยเหลือ','Someone has booked this machine next. Your clothes may be moved to the basket, so please collect them now. If they were already moved, contact the dorm administrator if you need help.'],
+['มีผู้ใช้จองเครื่องนี้ต่อแล้ว ผ้าของคุณอาจถูกนำออกใส่ตะกร้า รีบมารับผ้า หากผ้าถูกนำออกแล้ว ผ้าจะอยู่ในตะกร้าที่ห้องซักผ้า','Someone has booked this machine next. Your clothes may be moved to the basket, so please collect them now. If they were already moved, they will be in the basket in the laundry room.'],
 ['ซักเสร็จมา {n} นาที · ผู้อื่นจองต่อและนำ⁠ผ้าออกได้ทันที','Finished $1 min ago · others can book next and take clothes out right away'],
 ['มีผู้จองเครื่องนี้ต่อแล้ว','Someone has booked this machine next'],
 ['มีผู้จองเครื่อง {n} ต่อ','Machine $1 was booked next'],
-['มีผู้⁠ใช้จองเครื่องที่ผ้าของคุณยังอยู่ ผ้าของคุณอาจถูกนำออกใส่ตะกร้า รีบลงมารับ⁠ผ้า','Someone booked the machine your clothes are still in. Your clothes may be moved to the basket, so come collect them now.'],
+['มีผู้⁠ใช้จองเครื่องที่ผ้าของคุณยังอยู่ ผ้าของคุณอาจถูกนำออกใส่ตะกร้า รีบลงมารับ⁠⁠ผ้า','Someone booked the machine your clothes are still in. Your clothes may be moved to the basket, so come collect them now.'],
 ['รับ⁠ผ้าเรียบร้อย ผู้ที่จองต่อใช้เครื่องได้แล้ว','Clothes collected. The next person can use the machine now.'],
 ['แจ้งเมื่อมีผู้จองต่อ','Notify when someone books next'],
 ['แจ้งเมื่อมีคนจองเครื่องที่ผ้าของคุณยังอยู่','Notify when someone books the machine your clothes are still in'],
@@ -998,7 +991,7 @@ const DICT=[
 ['ยกเลิกการเชื่อม','Unlink'],
 ['ยกเลิก','Cancel'],
 ['ชำระเงินสำเร็จ หัก ฿{n} จากกระเป๋า⁠เงิน','Payment successful. ฿$1 deducted from your wallet'],
-['หัก ฿{n} จากกระเป๋า⁠เงิน ไปยืนยันตัว⁠ตนที่เครื่องด้วยการสแกน QR ภายใน {n} นาที','฿$1 deducted from your wallet. Go to the machine and verify yourself by scanning its QR code within $2 minutes.'],
+['หัก ฿{n} จากกระเป๋า⁠เงิน ไปยืนยันตัว⁠⁠ตนที่เครื่องด้วยการสแกน QR ภายใน {n} นาที','฿$1 deducted from your wallet. Go to the machine and verify yourself by scanning its QR code within $2 minutes.'],
 /* laundry */
 ['ยังไม่มีรายการซัก⁠ผ้า','No laundry yet'],
 ['ดูเครื่องที่ว่าง','See available machines'],
@@ -1069,7 +1062,6 @@ const DICT=[
 ['สรุปการหักเงินและเติม⁠เงิน','Summaries of charges and top-ups'],
 ['ข่าวสารจากหอ⁠พัก','Dorm news'],
 ['ประกาศปิดปรับปรุงเครื่อง','Machine maintenance announcements'],
-['สำหรับผู้ทดลองแอป','For app testers'],
 ['ความเร็วของเวลา','Time speed'],
 ['ค่าเริ่มต้นคือเวลาจริง ปรับให้เร็วขึ้นเพื่อดูครบทุกขั้นตอน','Default is real time. Speed it up to see every step.'],
 ['เวลาจริง','Real time'],
@@ -1093,7 +1085,7 @@ const DICT=[
 ['ยังไม่มีการแจ้ง⁠เตือน','No notifications yet'],
 ['ล้างทั้งหมด','Clear all'],
 /* notifications */
-['มีผู้⁠ใช้จองเครื่อง {n} ต่อ ผ้าของคุณถูกนำออกใส่ตะกร้าแล้ว กรุณาติดต่อผู้ดูแลหอ⁠พัก','Someone booked machine $1 next. Your clothes were moved to the basket. Please contact the dorm administrator.'],
+['ผู้ใช้คนถัดไปจองเครื่อง {n} ต่อและนำผ้าของคุณออกใส่ตะกร้าแล้ว กรุณามารับผ้าที่ห้องซักผ้า','The next user booked machine $1 and moved your clothes to the basket. Please collect them from the laundry room.'],
 ['ผ้าของคุณถูกนำออกใส่ตะกร้า','Your clothes were moved to the basket'],
 ['เครื่อง {n} ซักเสร็จแล้ว มารับ⁠ผ้าได้เลย','Machine $1 has finished. You can collect your clothes now.'],
 ['ซักเสร็จแล้ว','Wash complete'],
@@ -1135,7 +1127,7 @@ const DICT=[
 ['ชำระเงินสด ไปยืนยันตัว⁠ตนที่เครื่องด้วยการสแกน QR ภายใน {n} นาที แล้วหยอดเหรียญ ฿{n} จำนวน {n} เหรียญภายใน {n} นาทีหลังสแกน','Cash payment: go to the machine and verify yourself by scanning its QR code within $1 minutes, then insert $3 coins of ฿$2 within $4 minutes after scanning.'],
 ['ชำระเงินสด: หลังสแกน QR ที่เครื่อง ให้หยอดเหรียญ ฿{n} จำนวน {n} เหรียญ (รวม ฿{n}) ที่ช่องหยอดเหรียญบนเครื่อง ภายใน {n} นาทีหลังสแกน','Cash payment: after scanning the QR code on the machine, insert $2 coins of ฿$1 (total ฿$3) into the coin slot on the machine within $4 minutes after scanning.'],
 ['ชำระเงินสด: หยอดเหรียญ ฿{n} จำนวน {n} เหรียญ (รวม ฿{n}) ที่ช่องหยอดเหรียญบนเครื่อง ภายในเวลาที่เหลือ ระบบจะนับเหรียญให้อัตโนมัติ เมื่อรับเงินครบจึงจะนำ⁠ผ้าใส่เครื่องได้','Cash payment: insert $2 coins of ฿$1 (total ฿$3) into the coin slot on the machine within the time left. The system counts the coins automatically. Once the full amount is received, you can load your clothes.'],
-['เวลาที่เหลือ เพื่อเดินไปยืนยันตัว⁠ตนที่เครื่อง','Time left to walk to the machine and verify yourself'],
+['เวลาที่เหลือ เพื่อเดินไปยืนยันตัว⁠⁠ตนที่เครื่อง','Time left to walk to the machine and verify yourself'],
 ['ยืนยันตัว⁠ตนแล้ว หยอดเหรียญ ฿{n} ให้ครบ {n} เหรียญภายใน {n} นาที','Verified. Insert $2 coins of ฿$1 within $3 minutes.'],
 ['ไม่ได้หยอดเหรียญภายใน {n} นาที เครื่องกลับมาว่างแล้ว','You did not insert any coins within $1 minutes. The machine is available again.'],
 ['ไม่ได้สแกน QR ภายใน {n} นาที เครื่องกลับมาว่างแล้ว','You did not scan the QR code within $1 minutes. The machine is available again.'],
@@ -1193,7 +1185,7 @@ setInterval(tick,250);
 <script>
 (function(){const c=document.getElementById('clk'),a=document.getElementById('app');
 function t(){const d=new Date();c.textContent=d.getHours()+':'+String(d.getMinutes()).padStart(2,'0');
-const v=document.querySelector('.view.active');a.classList.toggle('lt',!!v&&['v-login','v-verify','v-setup','v-slogin','v-scan'].includes(v.id))}
+const v=document.querySelector('.view.active');a.classList.toggle('lt',!!v&&['v-login','v-verify','v-setup','v-scan'].includes(v.id))}
 t();setInterval(t,1000)})();
 </script>
 <script>
@@ -1215,7 +1207,7 @@ document.addEventListener('keydown',e=>{
  if($('#modal').classList.contains('show'))b=q($('#sheet'))||q($('#sheet'),1);
  else if(id==='v-scan'){e.preventDefault();doScan();return}
  else if(id==='v-laundry')b=q(v,1);
- else if(['v-verify','v-setup','v-sub','v-slogin'].includes(id))b=q(v);
+ else if(['v-verify','v-setup','v-sub'].includes(id))b=q(v);
  if(b){e.preventDefault();b.click()}
 });
 </script>
@@ -1233,7 +1225,7 @@ let x=null,y=null,sx=0,sy=0,ox=0,oy=0,moved=false,dn=false,idle;
 const bounds=()=>{const fr=getComputedStyle(document.getElementById('sbar')).display!=='none';return{minX:6,maxX:app.clientWidth-W-6,minY:fr?64:76,maxY:app.clientHeight-W-(fr?132:112)}};
 function place(px,py,snap){const b=bounds();x=Math.min(b.maxX,Math.max(b.minX,px));y=Math.min(b.maxY,Math.max(b.minY,py));if(snap)x=(x+W/2<app.clientWidth/2)?b.minX:b.maxX;at.style.transform='translate('+x+'px,'+y+'px)'}
 function wake(){at.classList.add('act');clearTimeout(idle);idle=setTimeout(()=>at.classList.remove('act'),2600)}
-window.atVis=function(v){const on=!['login','verify','setup','slogin','scan'].includes(v);at.style.display=on?'grid':'none';if(!on)closeAt();else{if(x===null)place(app.clientWidth,app.clientHeight*.6,true);else place(x,y,true);wake()}updAt()};
+window.atVis=function(v){const on=!['login','verify','setup','scan'].includes(v);at.style.display=on?'grid':'none';if(!on)closeAt();else{if(x===null)place(app.clientWidth,app.clientHeight*.6,true);else place(x,y,true);wake()}updAt()};
 function updAt(){const b=document.getElementById('atb');b.style.display=S.speed!==1?'block':'none';b.textContent='×'+S.speed}
 window.openAt=function(){
   document.getElementById('atp').innerHTML='<h3>ความเร็วของเวลา</h3><p>ค่าเริ่มต้นคือเวลาจริง ปรับให้เร็วขึ้นเพื่อดูครบทุกขั้นตอน</p><div class="atg">'+SP.map(a=>'<button class="att '+(S.speed===a[0]?'on':'')+'" onclick="setSpeed('+a[0]+')"><b>×'+a[0]+'</b><span>'+a[1]+'</span></button>').join('')+'</div><button class="atx" onclick="closeAt()">ปิด</button>';
